@@ -8,7 +8,7 @@
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="Coderthemes" name="author">
         <!-- App favicon -->
-        <link rel="shortcut icon" href="{{URL::asset('admin/assets/images/favicon.ico')}}">
+        <link rel="shortcut icon" href="{{URL::asset('admin/assets/images/Logo_LABAIK.png')}}">
 
         <!-- third party css -->
         <link href="{{URL::asset('admin/assets/css/vendor/jquery-jvectormap-1.2.2.css')}}" rel="stylesheet" type="text/css">
@@ -28,12 +28,16 @@
             <div class="leftside-menu">
 
                 <!-- LOGO -->
-                <a href="index.html" class="logo text-center logo-light">
-                    <span class="logo-lg">
-                        <img src="{{URL::asset('admin/assets/images/logo.png')}}" alt="" height="16">
-                    </span>
+
+                <a href="index.html" class="logo text-center logo-light" style="background-color: white">
+                    <div class="d-flex align-items-center gap-2 justify-content-center">
+                        <span class="logo-lg">
+                            <img src="{{URL::asset('admin/assets/images/Logo_LABAIK.png')}}" alt="" height="76" class="py-2">
+                        </span>
+                        <h4 class="fw-bold text-light">Labbaik</h4>
+                    </div>
                     <span class="logo-sm">
-                        <img src="{{URL::asset('admin/assets/images/logo_sm.png')}}" alt="" height="16">
+                        <img src="{{URL::asset('admin/assets/images/Logo_LABAIK.png')}}" alt="" height="46">
                     </span>
                 </a>
 
