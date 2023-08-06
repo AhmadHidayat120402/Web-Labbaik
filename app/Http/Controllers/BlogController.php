@@ -12,7 +12,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-        //
+        $data = Blog::all();
+        return view('admin.blog.index', compact('data'));
     }
 
     /**
@@ -28,7 +29,10 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $data['foto'] = $request->file('foto')->store('blog', 'public');
+        Blog::create($data);
+        return redirect('/blog');
     }
 
     /**
@@ -50,16 +54,24 @@ class BlogController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Blog $blog)
+    public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+        if (!empty($data['foto'])) {
+            $data['foto'] = $request->file('foto')->store('blog', 'public');
+        } else {
+            unset($data['foto']);
+        }
+        Blog::findOrFail($id)->update($data);
+        return redirect('/blog');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Blog $blog)
+    public function destroy($id)
     {
-        //
+        Blog::findOrFail($id)->delete();
+        return  redirect('/blog');
     }
 }
