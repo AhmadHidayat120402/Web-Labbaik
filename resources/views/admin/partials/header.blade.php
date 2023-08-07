@@ -1,6 +1,6 @@
 <div class="navbar-custom">
     <ul class="list-unstyled topbar-menu float-end mb-0">
-        <li class="dropdown notification-list d-lg-none">
+        {{-- <li class="dropdown notification-list d-lg-none">
             <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button"
                 aria-haspopup="false" aria-expanded="false">
                 <i class="dripicons-search noti-icon"></i>
@@ -11,13 +11,13 @@
                         aria-label="Recipient's username">
                 </form>
             </div>
-        </li>
+        </li> --}}
         <li class="dropdown notification-list topbar-dropdown">
             <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button"
                 aria-haspopup="false" aria-expanded="false">
                 <img src="{{ URL::asset('admin/assets/images/flags/us.jpg') }}" alt="user-image" class="me-0 me-sm-1"
                     height="12">
-                <span class="align-middle d-none d-sm-inline-block">English</span> <i
+                <span class="align-middle d-none d-sm-inline-block">Departement</span> <i
                     class="mdi mdi-chevron-down d-none d-sm-inline-block align-middle"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu">
@@ -25,25 +25,29 @@
                 <!-- item-->
                 <a href="javascript:void(0);" class="dropdown-item notify-item">
                     <img src="{{ URL::asset('admin/assets/images/flags/germany.jpg') }}" alt="user-image" class="me-1"
-                        height="12"> <span class="align-middle">German</span>
+                        height="12"> <span class="align-middle">Kominfo</span>
                 </a>
 
                 <!-- item-->
                 <a href="javascript:void(0);" class="dropdown-item notify-item">
                     <img src="{{ URL::asset('admin/assets/images/flags/italy.jpg') }}" alt="user-image" class="me-1"
-                        height="12"> <span class="align-middle">Italian</span>
+                        height="12"> <span class="align-middle">Syiar</span>
                 </a>
 
                 <!-- item-->
                 <a href="javascript:void(0);" class="dropdown-item notify-item">
                     <img src="{{ URL::asset('admin/assets/images/flags/spain.jpg') }}" alt="user-image" class="me-1"
-                        height="12"> <span class="align-middle">Spanish</span>
+                        height="12"> <span class="align-middle">Kemuslimahan</span>
                 </a>
 
                 <!-- item-->
                 <a href="javascript:void(0);" class="dropdown-item notify-item">
                     <img src="{{ URL::asset('admin/assets/images/flags/russia.jpg') }}" alt="user-image" class="me-1"
-                        height="12"> <span class="align-middle">Russian</span>
+                        height="12"> <span class="align-middle">PSDM</span>
+                </a>
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                    <img src="{{ URL::asset('admin/assets/images/flags/russia.jpg') }}" alt="user-image" class="me-1"
+                        height="12"> <span class="align-middle">KWU</span>
                 </a>
 
             </div>
@@ -51,7 +55,7 @@
 
 
 
-        <li class="dropdown notification-list d-none d-sm-inline-block mt-3">
+        {{-- <li class="dropdown notification-list d-none d-sm-inline-block mt-3">
             <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button"
                 aria-haspopup="false" aria-expanded="false">
                 <i class="dripicons-view-apps noti-icon"></i>
@@ -103,13 +107,13 @@
                 </div>
 
             </div>
-        </li>
+        </li> --}}
 
-        <li class="notification-list mt-3">
+        {{-- <li class="notification-list mt-3">
             <a class="nav-link end-bar-toggle" href="javascript: void(0);">
                 <i class="dripicons-gear noti-icon"></i>
             </a>
-        </li>
+        </li> --}}
 
         <li class="dropdown notification-list">
             <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" href="#"

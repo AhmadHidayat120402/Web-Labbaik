@@ -17,16 +17,25 @@
             <a data-bs-toggle="collapse" href="#sidebarEmail" aria-expanded="false" aria-controls="sidebarEmail"
                 class="side-nav-link">
                 <i class="uil-envelope"></i>
-                <span> Email </span>
+                <span> Departement </span>
                 <span class="menu-arrow"></span>
             </a>
             <div class="collapse" id="sidebarEmail">
                 <ul class="side-nav-second-level">
                     <li>
-                        <a href="apps-email-inbox.html">Inbox</a>
+                        <a href="apps-email-inbox.html">Kominfo</a>
                     </li>
                     <li>
-                        <a href="apps-email-read.html">Read Email</a>
+                        <a href="apps-email-read.html">Syiar</a>
+                    </li>
+                    <li>
+                        <a href="apps-email-read.html">Kemuslimahan</a>
+                    </li>
+                    <li>
+                        <a href="apps-email-read.html">PSDM</a>
+                    </li>
+                    <li>
+                        <a href="apps-email-read.html">KWU</a>
                     </li>
                 </ul>
             </div>
