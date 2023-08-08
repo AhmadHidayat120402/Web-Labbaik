@@ -21,11 +21,16 @@
     <!-- third party css end -->
 
     <!-- App css -->
+    <link href="{{ URL::asset('/css/style.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ URL::asset('admin/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ URL::asset('admin/assets/css/app.min.css') }}" rel="stylesheet" type="text/css" id="light-style">
     <link href="{{ URL::asset('admin/assets/css/app-dark.min.css') }}" rel="stylesheet" type="text/css" id="dark-style">
     <link href="{{ URL::asset('admin/assets/css/style.css') }}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="//cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js' rel='stylesheet'>
+
+
 
 </head>
 

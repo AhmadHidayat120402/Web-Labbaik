@@ -15,8 +15,8 @@
         <li class="dropdown notification-list topbar-dropdown">
             <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button"
                 aria-haspopup="false" aria-expanded="false">
-                <img src="{{ URL::asset('admin/assets/images/flags/us.jpg') }}" alt="user-image" class="me-0 me-sm-1"
-                    height="12">
+                {{-- <img src="{{ URL::asset('admin/assets/images/flags/us.jpg') }}" alt="user-image" class="me-0 me-sm-1"
+                    height="12"> --}}
                 <span class="align-middle d-none d-sm-inline-block">Departement</span> <i
                     class="mdi mdi-chevron-down d-none d-sm-inline-block align-middle"></i>
             </a>
@@ -24,30 +24,35 @@
 
                 <!-- item-->
                 <a href="javascript:void(0);" class="dropdown-item notify-item">
-                    <img src="{{ URL::asset('admin/assets/images/flags/germany.jpg') }}" alt="user-image" class="me-1"
-                        height="12"> <span class="align-middle">Kominfo</span>
+                    {{-- <img src="{{ URL::asset('admin/assets/images/flags/germany.jpg') }}" alt="user-image" class="me-1"
+                        height="12">  --}}
+                    <span class="align-middle">Kominfo</span>
                 </a>
 
                 <!-- item-->
                 <a href="javascript:void(0);" class="dropdown-item notify-item">
-                    <img src="{{ URL::asset('admin/assets/images/flags/italy.jpg') }}" alt="user-image" class="me-1"
-                        height="12"> <span class="align-middle">Syiar</span>
+                    {{-- <img src="{{ URL::asset('admin/assets/images/flags/italy.jpg') }}" alt="user-image" class="me-1"
+                        height="12">  --}}
+                    <span class="align-middle">Syiar</span>
                 </a>
 
                 <!-- item-->
                 <a href="javascript:void(0);" class="dropdown-item notify-item">
-                    <img src="{{ URL::asset('admin/assets/images/flags/spain.jpg') }}" alt="user-image" class="me-1"
-                        height="12"> <span class="align-middle">Kemuslimahan</span>
+                    {{-- <img src="{{ URL::asset('admin/assets/images/flags/spain.jpg') }}" alt="user-image" class="me-1"
+                        height="12"> --}}
+                    <span class="align-middle">Kemuslimahan</span>
                 </a>
 
                 <!-- item-->
                 <a href="javascript:void(0);" class="dropdown-item notify-item">
-                    <img src="{{ URL::asset('admin/assets/images/flags/russia.jpg') }}" alt="user-image" class="me-1"
-                        height="12"> <span class="align-middle">PSDM</span>
+                    {{-- <img src="{{ URL::asset('admin/assets/images/flags/russia.jpg') }}" alt="user-image" class="me-1"
+                        height="12">  --}}
+                    <span class="align-middle">PSDM</span>
                 </a>
                 <a href="javascript:void(0);" class="dropdown-item notify-item">
-                    <img src="{{ URL::asset('admin/assets/images/flags/russia.jpg') }}" alt="user-image" class="me-1"
-                        height="12"> <span class="align-middle">KWU</span>
+                    {{-- <img src="{{ URL::asset('admin/assets/images/flags/russia.jpg') }}" alt="user-image" class="me-1"
+                        height="12">  --}}
+                    <span class="align-middle">KWU</span>
                 </a>
 
             </div>
@@ -140,22 +145,22 @@
                 </a>
 
                 <!-- item-->
-                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <a href="javascript:void(0);" class="dropdown-item notify-item end-bar-toggle">
                     <i class="mdi mdi-account-edit me-1"></i>
                     <span>Settings</span>
                 </a>
 
-                <!-- item-->
+                {{-- <!-- item-->
                 <a href="javascript:void(0);" class="dropdown-item notify-item">
                     <i class="mdi mdi-lifebuoy me-1"></i>
                     <span>Support</span>
-                </a>
+                </a> --}}
 
-                <!-- item-->
+                {{-- <!-- item-->
                 <a href="javascript:void(0);" class="dropdown-item notify-item">
                     <i class="mdi mdi-lock-outline me-1"></i>
                     <span>Lock Screen</span>
-                </a>
+                </a> --}}
 
                 <!-- item-->
                 <a href="javascript:void(0);" class="dropdown-item notify-item">

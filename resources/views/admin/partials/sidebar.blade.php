@@ -6,9 +6,9 @@
         <li class="side-nav-title side-nav-item">Navigation</li>
 
         <li class="side-nav-item">
-            <a href="/" class="side-nav-link"> <i class="uil-home-alt"></i> Dashboard</a>
-            <a href="/blog" class="side-nav-link"> <i class="uil-home-alt"></i> Blog</a>
-            <a href="/blog" class="side-nav-link"> <i class="uil-home-alt"></i> Rapat</a>
+            <a href="/" class="side-nav-link"> <i class='bx bxs-dashboard'></i> Dashboard</a>
+            <a href="/blog" class="side-nav-link"> <i class='bx bxl-blogger'></i> Blog</a>
+            <a href="/blog" class="side-nav-link"> <i class='bx bx-user-voice'></i> Rapat</a>
         </li>
 
 
@@ -16,8 +16,7 @@
         <li class="side-nav-item">
             <a data-bs-toggle="collapse" href="#sidebarEmail" aria-expanded="false" aria-controls="sidebarEmail"
                 class="side-nav-link">
-                <i class="uil-envelope"></i>
-                <span> Departement </span>
+                <span><i class='bx bx-group'></i> Departement </span>
                 <span class="menu-arrow"></span>
             </a>
             <div class="collapse" id="sidebarEmail">
