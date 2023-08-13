@@ -1,6 +1,6 @@
 @extends('admin.layouts.main')
 @section('content2')
-    <div class="d-flex justify-content-between">
+    <div class="d-flex justify-content-between mt-3">
         <button class="btn btn-primary mt-2" type="button" data-bs-toggle="modal" data-bs-target="#addNew"><i
                 class='bx bx-book-add'></i>
             tambah blog baru</button>
@@ -35,7 +35,7 @@
 
                                 {{-- <button type="button" data-bs-toggle="modal" data-bs-target="#edit{{ $item->id }}"
                                     class="btn btn-warning">Edit</button> --}}
-                                <form action="/blog/{{ $item->id }}" method="post" class="delete-form m-0">
+                                <form action="/admin/blog/{{ $item->id }}" method="post" class="delete-form m-0">
                                     @method('DELETE')
                                     @csrf
                                     <input type="hidden" name="id" value="{{ $item->id }}">
@@ -58,7 +58,8 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form action="/blog/{{ $item->id }}" method="post" enctype="multipart/form-data">
+                                    <form action="/admin/blog/{{ $item->id }}" method="post"
+                                        enctype="multipart/form-data">
                                         @csrf
                                         @method('PUT')
                                         <div class="mb-3">
@@ -117,7 +118,7 @@
                                 }
                             }).then((result) => {
                                 if (result.isConfirmed) {
-                                    this.parentNode.action = '/blog/' + id;
+                                    this.parentNode.action = '/admin/blog/' + id;
                                     this.parentNode.submit();
                                 }
                             });
@@ -140,7 +141,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form action="/save" method="post" enctype="multipart/form-data">
+                <form action="/admin/saveBlog" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-3">
                         <label for="judul" class="mb-1">Judul</label>

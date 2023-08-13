@@ -12,7 +12,8 @@ class RapatController extends Controller
      */
     public function index()
     {
-        //
+        $data = Rapat::all();
+        return view('admin.rapat.index', compact('data'));
     }
 
     /**
@@ -28,7 +29,10 @@ class RapatController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $data['foto'] = $request->file('foto')->store('rapat', 'public');
+        Rapat::create($data);
+        return redirect('/admin/rapat');
     }
 
     /**
@@ -50,16 +54,24 @@ class RapatController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Rapat $rapat)
+    public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+        if (!empty($data['foto'])) {
+            $data['foto'] = $request->file('foto')->store('rapat', 'public');
+        } else {
+            unset($data['foto']);
+        }
+        Rapat::findOrFail($id)->update($data);
+        return redirect('/admin/rapat');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Rapat $rapat)
+    public function destroy($id)
     {
-        //
+        Rapat::findOrFail($id)->delete();
+        return  redirect('/admin/rapat');
     }
 }

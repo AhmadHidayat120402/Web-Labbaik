@@ -20,7 +20,6 @@ return new class extends Migration
             $table->integer('jumlah_yang_tidak_hadir');
             $table->string('hasil_rapat');
             $table->string('note');
-
             $table->softDeletes();
             $table->timestamps();
         });

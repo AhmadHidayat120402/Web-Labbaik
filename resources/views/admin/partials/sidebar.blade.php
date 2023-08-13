@@ -6,9 +6,9 @@
         <li class="side-nav-title side-nav-item">Navigation</li>
 
         <li class="side-nav-item">
-            <a href="/" class="side-nav-link"> <i class='bx bxs-dashboard'></i> Dashboard</a>
-            <a href="/blog" class="side-nav-link"> <i class='bx bxl-blogger'></i> Blog</a>
-            <a href="/blog" class="side-nav-link"> <i class='bx bx-user-voice'></i> Rapat</a>
+            <a href="/admin/home" class="side-nav-link"> <i class='bx bxs-dashboard'></i> Dashboard</a>
+            <a href="/admin/blog" class="side-nav-link"> <i class='bx bxl-blogger'></i> Blog</a>
+            <a href="/admin/rapat" class="side-nav-link"> <i class='bx bx-user-voice'></i> Rapat</a>
         </li>
 
 
